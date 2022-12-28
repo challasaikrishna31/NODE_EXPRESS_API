@@ -8,6 +8,6 @@ app.use(bodyParser.json());
 app.use('/users',usersRoutes);
 app.get('/',(req,res)=>{
     //console.log('[TEST]!');
-    res.send('Hello from Homepage.');
+    res.send('Hello from Homepage.\nRoutes\n1./users');
 })
 app.listen(PORT,()=>console.log(`Server running on port:http://localhost:${PORT}`));
